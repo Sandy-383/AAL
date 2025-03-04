@@ -1,38 +1,23 @@
 #include <stdio.h>
 
-void main() {
-    int n;
-    printf("Enter the length of array: ");
-    scanf("%d", &n);
-    int a[n]; 
-
 int main() {
     int length;
     printf("Enter the size of array: ");
     scanf("%d", &length);
     
     int a[length];
-
-    printf("Enter the elements to be stored: ");
-    for(int x = 0; x < n; x++) {
+    
     printf("Enter the elements to be stored in the array:\n");
     for (int x = 0; x < length; x++) {
         scanf("%d", &a[x]);
     }
 
-    
-    printf("Array before Bubble sort: \n");
-    for(int y = 0; y < n; y++) {
     printf("Array before bubble sort:\n");
     for (int y = 0; y < length; y++) {
         printf("%d ", a[y]);
     }
     printf("\n");
 
-    
-    for(int i = 0; i < n - 1; i++) {
-        for(int j = 0; j < n - i - 1; j++) {
-            if(a[j] > a[j + 1]) {
  
     for (int i = 0; i < length - 1; i++) {  
         for (int j = 0; j < length - 1 - i; j++) {  
@@ -50,9 +35,6 @@ int main() {
         printf("\n");
     }
 
-    printf("Array after Bubble sort: \n");
-    for(int y = 0; y < n; y++) {
-        printf("%d ", a[y]);
     printf("Array after bubble sort:\n");
     for (int k = 0; k < length; k++) {
         printf("%d ", a[k]);
