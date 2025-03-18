@@ -43,3 +43,8 @@ int main() {
 
     return 0;
 }
+
+OUTPUT
+
+Original vector: 64 25 12 22 11 
+Sorted vector:   11 12 22 25 64 
